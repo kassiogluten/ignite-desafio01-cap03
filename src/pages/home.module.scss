@@ -1,1 +1,52 @@
-// TODO
+@import '../styles/theme.scss';
+.container {
+  margin: 5rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  ul {
+    li {
+      list-style: none;
+      margin: 4rem 0;
+      h2 {
+        font-size: 28px;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      > p {
+        color: $Body;
+        font-size: 1.125rem;
+      }
+      > div {
+        margin-top: 1.5rem;
+      }
+      div {
+        display: flex;
+        color: $Info;
+        align-items: center;
+        span {
+          font-size: 0.875rem;
+          display: flex;
+          align-items: center;
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+        span + span {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+    li + li {
+      margin-top: 3rem;
+    }
+  }
+  button {
+    background: none;
+    color: $Highlight;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+  }
+}
